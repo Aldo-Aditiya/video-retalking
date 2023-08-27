@@ -59,11 +59,11 @@ done
 
 start_nginx
 
-execute_script "/pre_start.sh" "Running pre-start script..."
+execute_script "pre_start.sh" "Running pre-start script..."
 echo "Pod Started"
 
 setup_ssh
 
-execute_script "/post_start.sh" "Running post-start script..."
+execute_script "post_start.sh" "Running post-start script..."
 
 sleep infinity
